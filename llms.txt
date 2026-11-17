@@ -1,0 +1,26 @@
+# klmhonos
+
+> Official website of klmhonos, the rap artist also known as Kalovel.
+
+klmhonos is a rapper with roughly 56,000 monthly Spotify listeners. His biggest
+track, "this love (remix)", has over 4 million streams. He started releasing
+music in 2024 and his catalog spans two albums, one EP, and 15+ singles.
+
+## Discography
+- Albums: #Ghoultape (2025), Wasted (2025)
+- EP: Bad Omen (2024)
+- Singles include: the silhouette, howdidimakeumine, the lobotomy (remix),
+  too gone, i dont feel the same (2026); Lokked In, Rokkstar Life,
+  break shi (havinamo) (2025); this love (remix), 5orrow, honos, troopz,
+  #krookmove (2024)
+- Top tracks: this love (remix), August 10 (never learn), 5orrow,
+  Sit n pray (Under your spell), troopz
+
+## Links
+- Spotify: https://open.spotify.com/artist/2HcArzCdvU1tYOqemFEJHl
+- Instagram: https://www.instagram.com/kalovel_/
+- X: https://twitter.com/klmhonos_
+
+## Pages
+- [Home](https://benji-bitter.github.io/klmhonos/): full discography,
+  top tracks, complete song list, about, socials.
