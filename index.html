@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>klmhonos</title>
+  <meta name="description" content="Official website of klmhonos (aka Kalovel). Music, releases and links.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+  <canvas id="spray" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top">KLMHONOS</a>
+    <nav class="nav__links">
+      <a href="#releases">Releases</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="nav__cta" href="https://open.spotify.com/artist/2HcArzCdvU1tYOqemFEJHl" target="_blank" rel="noopener">Listen ↗</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#releases">Releases</a>
+    <a href="#tracks">Tracks</a>
+    <a href="#about">About</a>
+    <a href="https://open.spotify.com/artist/2HcArzCdvU1tYOqemFEJHl" target="_blank" rel="noopener">Spotify ↗</a>
+    <a href="https://www.instagram.com/kalovel_/" target="_blank" rel="noopener">Instagram ↗</a>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow reveal">aka kalovel</p>
+          <h1 class="hero__title reveal">KLM<br>HONOS</h1>
+          <p class="hero__tag reveal">New single <a href="https://open.spotify.com/album/1aUqAeypybShbrsDPnsahT" target="_blank" rel="noopener">the silhouette ↗</a> out now.</p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--solid" href="https://open.spotify.com/artist/2HcArzCdvU1tYOqemFEJHl" target="_blank" rel="noopener">Stream on Spotify</a>
+            <a class="btn btn--ghost" href="https://www.instagram.com/kalovel_/" target="_blank" rel="noopener">@kalovel_</a>
+          </div>
+          <div class="hero__stats reveal">
+            <div class="stat"><span class="stat__num" data-count="55989">0</span><span class="stat__label">monthly listeners</span></div>
+            <div class="stat"><span class="stat__num" data-count="4227496">0</span><span class="stat__label">streams on "this love (remix)"</span></div>
+          </div>
+        </div>
+        <div class="hero__image reveal">
+          <img src="assets/artist.jpg" alt="KLMHONOS" width="480" height="480">
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>this love (remix)</span><i>◆</i>
+        <span>august 10 (never learn)</span><i>◆</i>
+        <span>5orrow</span><i>◆</i>
+        <span>sit n pray</span><i>◆</i>
+        <span>troopz</span><i>◆</i>
+        <span>#ghoultape</span><i>◆</i>
+        <span>this love (remix)</span><i>◆</i>
+        <span>august 10 (never learn)</span><i>◆</i>
+        <span>5orrow</span><i>◆</i>
+        <span>sit n pray</span><i>◆</i>
+        <span>troopz</span><i>◆</i>
+        <span>#ghoultape</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- RELEASES -->
+    <section class="section" id="releases">
+      <div class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Releases</h2>
+        <a class="section__more" href="https://open.spotify.com/artist/2HcArzCdvU1tYOqemFEJHl" target="_blank" rel="noopener">Full discography ↗</a>
+      </div>
+      <div class="releases">
+        <a class="release reveal" href="https://open.spotify.com/album/1aUqAeypybShbrsDPnsahT" target="_blank" rel="noopener">
+          <div class="release__art"><img src="assets/silhouette.jpg" alt="the silhouette cover" loading="lazy"><span class="release__play">▶</span></div>
+          <h3>the silhouette</h3><p>Single · 2026</p>
+        </a>
+        <a class="release reveal" href="https://open.spotify.com/album/4GSXQtESE1KCxiaYZzc8od" target="_blank" rel="noopener">
+          <div class="release__art"><img src="assets/howdidimakeumine.jpg" alt="howdidimakeumine cover" loading="lazy"><span class="release__play">▶</span></div>
+          <h3>howdidimakeumine</h3><p>Single · 2026</p>
+        </a>
+        <a class="release reveal" href="https://open.spotify.com/album/4InkWbHUTsZ0kasq58k0pF" target="_blank" rel="noopener">
+          <div class="release__art"><img src="assets/lobotomy.jpg" alt="the lobotomy remix cover" loading="lazy"><span class="release__play">▶</span></div>
+          <h3>the lobotomy (remix)</h3><p>Single · 2026</p>
+        </a>
+        <a class="release reveal" href="https://open.spotify.com/album/6CbLmfcgbXSPG9oqX0f6dB" target="_blank" rel="noopener">
+          <div class="release__art"><img src="assets/toogone.jpg" alt="too gone cover" loading="lazy"><span class="release__play">▶</span></div>
+          <h3>too gone</h3><p>Single · 2026</p>
+        </a>
+        <a class="release reveal" href="https://open.spotify.com/album/5faDuUopC9hoYXhAMZ0O2v" target="_blank" rel="noopener">
+          <div class="release__art"><img src="assets/idfs.jpg" alt="i dont feel the same cover" loading="lazy"><span class="release__play">▶</span></div>
+          <h3>i dont feel the same</h3><p>Single · 2026</p>
+        </a>
+        <a class="release reveal" href="https://open.spotify.com/album/3GgSB5uFYxzVZT6sMle15Q" target="_blank" rel="noopener">
+          <div class="release__art"><img src="assets/ghoultape.jpg" alt="#Ghoultape cover" loading="lazy"><span class="release__play">▶</span></div>
+          <h3>#Ghoultape</h3><p>Album · 2025</p>
+        </a>
+        <a class="release reveal" href="https://open.spotify.com/album/7i8WU8rvf4381tanTh1VaF" target="_blank" rel="noopener">
+          <div class="release__art"><img src="assets/wasted.jpg" alt="Wasted cover" loading="lazy"><span class="release__play">▶</span></div>
+          <h3>Wasted</h3><p>Album · 2025</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- TRACKS -->
+    <section class="section section--alt" id="tracks">
+      <div class="section__head reveal">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Top Tracks</h2>
+      </div>
+      <div class="tracks__grid">
+        <ol class="tracks__list">
+          <li class="track reveal">
+            <span class="track__num">01</span>
+            <a class="track__name" href="https://open.spotify.com/search/klmhonos%20this%20love" target="_blank" rel="noopener">this love (Remix)</a>
+            <span class="track__plays">4,227,496</span>
+          </li>
+          <li class="track reveal">
+            <span class="track__num">02</span>
+            <a class="track__name" href="https://open.spotify.com/search/klmhonos%20august%2010" target="_blank" rel="noopener">August 10 (never learn)</a>
+            <span class="track__plays">1,246,541</span>
+          </li>
+          <li class="track reveal">
+            <span class="track__num">03</span>
+            <a class="track__name" href="https://open.spotify.com/search/klmhonos%205orrow" target="_blank" rel="noopener">5orrow</a>
+            <span class="track__plays">611,572</span>
+          </li>
+          <li class="track reveal">
+            <span class="track__num">04</span>
+            <a class="track__name" href="https://open.spotify.com/search/klmhonos%20sit%20n%20pray" target="_blank" rel="noopener">Sit n pray (Under your spell)</a>
+            <span class="track__plays">549,080</span>
+          </li>
+          <li class="track reveal">
+            <span class="track__num">05</span>
+            <a class="track__name" href="https://open.spotify.com/search/klmhonos%20troopz" target="_blank" rel="noopener">troopz</a>
+            <span class="track__plays">349,793</span>
+          </li>
+        </ol>
+        <div class="tracks__player reveal">
+          <iframe src="https://open.spotify.com/embed/artist/2HcArzCdvU1tYOqemFEJHl?utm_source=generator&theme=0" width="100%" height="100%" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="KLMHONOS on Spotify"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about">
+        <div class="about__image reveal">
+          <img src="assets/artist.jpg" alt="KLMHONOS portrait" loading="lazy">
+        </div>
+        <div class="about__text">
+          <p class="about__lead reveal">KLMHONOS, also known as <strong>Kalovel</strong>, is a rapper.</p>
+          <p class="reveal">His catalog runs from the 2025 tapes <em>#Ghoultape</em> and <em>Wasted</em> to a string of 2026 singles including <em>the silhouette</em>, <em>howdidimakeumine</em> and <em>the lobotomy (remix)</em>. His biggest record, <em>this love (remix)</em>, has over 4 million streams.</p>
+          <div class="about__facts reveal">
+            <div><span>56K+</span> monthly listeners</div>
+            <div><span>4.2M</span> streams on his biggest song</div>
+            <div><span>7</span> releases</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <h2 class="footer__big" aria-hidden="true">KLMHONOS</h2>
+      <div class="footer__links">
+        <a href="https://open.spotify.com/artist/2HcArzCdvU1tYOqemFEJHl" target="_blank" rel="noopener">Spotify</a>
+        <a href="https://www.instagram.com/kalovel_/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://twitter.com/klmhonos_" target="_blank" rel="noopener">X / Twitter</a>
+      </div>
+      <p class="footer__copy">© 2026 klmhonos</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js?v=3"></script>
+</body>
+</html>
