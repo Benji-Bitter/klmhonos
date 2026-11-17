@@ -84,6 +84,9 @@ document.querySelectorAll('.stat__num').forEach(el => countObserver.observe(el))
 
   const jobs = [];
   const MAX_JOBS = 3;
+  const CAP = MOBILE ? 4 : 7;      // max tags visible on the wall at once
+  const TAG_LIFE = 50000;          // ms a tag counts as "live" before it fades away
+  const live = [];                 // spawn timestamps of tags still on the wall
 
   const makeJob = () => {
     const word = WORDS[(Math.random() * WORDS.length) | 0];
@@ -127,6 +130,7 @@ document.querySelectorAll('.stat__num').forEach(el => countObserver.observe(el))
       drips,
       done: false
     });
+    live.push(performance.now());
   };
 
   const frame = () => {
@@ -194,7 +198,9 @@ document.querySelectorAll('.stat__num').forEach(el => countObserver.observe(el))
   };
 
   const spawn = () => {
-    try { if (jobs.length < MAX_JOBS) makeJob(); } catch (e) { /* skip tag */ }
+    const now = performance.now();
+    while (live.length && now - live[0] > TAG_LIFE) live.shift();
+    try { if (live.length < CAP && jobs.length < MAX_JOBS) makeJob(); } catch (e) { /* skip tag */ }
     setTimeout(spawn, 1800 + Math.random() * 2800);
   };
 
