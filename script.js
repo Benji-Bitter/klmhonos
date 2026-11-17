@@ -84,7 +84,7 @@ document.querySelectorAll('.stat__num').forEach(el => countObserver.observe(el))
 
   const jobs = [];
   const MAX_JOBS = 3;
-  const CAP = MOBILE ? 4 : 7;      // max tags visible on the wall at once
+  const CAP = MOBILE ? 8 : 15;     // max tags visible on the wall at once
   const TAG_LIFE = 50000;          // ms a tag counts as "live" before it fades away
   const live = [];                 // spawn timestamps of tags still on the wall
 
