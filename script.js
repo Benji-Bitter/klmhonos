@@ -84,6 +84,17 @@ document.querySelectorAll('.stat__num').forEach(el => countObserver.observe(el))
 
   const jobs = [];
   const MAX_JOBS = 3;
+
+  // viewport rects of all content the spray should avoid
+  const blockedRects = () => {
+    const rects = [];
+    document.querySelectorAll('h1, h2, h3, p, a, button, li, img, iframe, span').forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.width > 0 && r.height > 0)
+        rects.push([r.left * DPR, r.top * DPR, r.right * DPR, r.bottom * DPR]);
+    });
+    return rects;
+  };
   const CAP = MOBILE ? 8 : 15;     // max tags visible on the wall at once
   const TAG_LIFE = 50000;          // ms a tag counts as "live" before it fades away
   const live = [];                 // spawn timestamps of tags still on the wall
@@ -121,10 +132,23 @@ document.querySelectorAll('.stat__num').forEach(el => countObserver.observe(el))
         drips.push({ x: Math.random() * tw, y: th * 0.55, len: 0, max: (10 + Math.random() * 22) * DPR });
     }
 
+    // try up to 30 spots; bail if every one overlaps content
+    const blocks = blockedRects();
+    const margin = Math.max(tw, th) * 0.12 + 12 * DPR;
+    let x = 0, y = 0, placed = false;
+    for (let a = 0; a < 30 && !placed; a++) {
+      const cx = Math.random() * W - tw * 0.5;
+      const cy = Math.random() * H - th * 0.5;
+      const hit = blocks.some(([l, t, r, b]) =>
+        cx - margin < r && cx + tw + margin > l &&
+        cy - margin < b && cy + th + margin > t);
+      if (!hit) { x = cx; y = cy; placed = true; }
+    }
+    if (!placed) return;
+
     jobs.push({
       pts, i: 0, tw, th,
-      x: Math.random() * W - tw * 0.5,
-      y: Math.random() * H - th * 0.5,
+      x, y,
       rot: (Math.random() - 0.5) * (Math.random() < 0.25 ? 0.9 : 0.3),
       color: pickColor(),
       drips,
